@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Little Diwali Surprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sparks"></canvas>
+
+<section id="s-door" class="screen active">
+  <p class="kicker">A little Diwali surprise for you...</p>
+  <div class="scene">
+    <div class="glow"></div>
+    <div class="frame">
+      <div class="leaf left"><span class="panel"></span><span class="panel"></span><span class="ring"></span></div>
+      <div class="leaf right"><span class="panel"></span><span class="panel"></span><span class="ring"></span></div>
+    </div>
+    <div class="diya small"><i class="flame"></i><b></b></div>
+  </div>
+  <p class="made">Made with love, especially for Bindu Akka ❤️</p>
+  <button class="btn" id="openDoor">Open Your Little Surprise ✨</button>
+</section>
+
+<section id="s-welcome" class="screen">
+  <div class="diya big"><i class="flame"></i><b></b></div>
+  <h1>Happy Diwali, Bindu Akka! 🪔</h1>
+  <p class="lead">May your days be filled with happiness, peace, positivity and beautiful beginnings.</p>
+  <button class="btn" id="toLetter">There's something for you...</button>
+</section>
+
+<section id="s-letter" class="screen">
+  <div id="envStage" class="stage">
+    <div class="envelope" id="envelope">
+      <div class="paperIn" id="paperPeek"></div>
+      <div class="pocket"></div>
+      <div class="flap"></div>
+      <div class="seal">❤</div>
+      <div class="to">To My Bindu Akka ❤️</div>
+    </div>
+    <button class="btn" id="openLetter">Open Letter</button>
+  </div>
+  <div id="readStage" class="read hidden">
+    <div class="progress"><span id="bar"></span></div>
+    <div class="paper" id="paper">
+      <article id="letter">
+        <p>Dear Bindu Akka, ❤️</p>
+        <p>First of all, Happy Diwali, Akka! 🪔✨</p>
+        <p>Wishing you a very happy, peaceful and beautiful Diwali. Hope this festival brings lots of happiness, positivity, good health and new beginnings into your life.</p>
+        <p>I wanted to make this Diwali wish a little different instead of sending you the usual two-line message. So, here is a little letter with some wishes, reminders and a few things I genuinely want to tell you.</p>
+        <p>Akka, life is going to bring you so many different experiences. Some days will be exciting, some will be challenging, and some days might not go exactly the way you planned. But through all of them, I hope you never lose confidence in yourself. Always remember how capable you are and how much potential you have. Never allow a temporary failure, a difficult situation or somebody else's opinion to make you doubt your abilities.</p>
+        <p>Keep working towards your dreams. Whatever you want to achieve in your studies, career and personal life, give it your best. You don't need to figure out everything at once. Take one step at a time. Be patient with yourself and trust the effort you are putting in. Even when the results take longer than expected, don't lose hope. Good things take time, and your efforts will always teach you something valuable.</p>
+        <p>And please, never compare your journey with someone else's. Everyone has different responsibilities, different opportunities and different struggles. Your journey doesn't have to look like anybody else's to be meaningful. Be proud of your own progress, even if it seems small. Sometimes, the little improvements we make every day become the biggest achievements later.</p>
+        <p>I wish you a life where you feel genuinely happy, not just on special occasions but even on ordinary days. I hope you learn to enjoy your own company, find happiness in the little things, celebrate your achievements and feel proud of the person you are becoming.</p>
+        <p>I hope you always have beautiful reasons to smile. And even when there isn't anything particularly special happening, I hope you can still find happiness in a peaceful morning, your favourite food, a good conversation, a successful day or simply having some time for yourself.</p>
+        <p>I also wish that life brings you people who understand you, respect your efforts, appreciate your presence and genuinely want to see you doing well. People who encourage you instead of making you doubt yourself, who support your growth and who make your life a little lighter. And whenever life takes people in different directions or plans change unexpectedly, I hope your happiness and confidence remain just as strong. Never let your ability to be happy depend entirely on circumstances or on who happens to be around you. You deserve a beautiful life in every phase of it.</p>
+        <p>Always make time for yourself, akka. You have your own dreams, interests, preferences and little things that make you happy. Don't postpone all your happiness until you achieve something big. Enjoy the journey too! Take pictures, make memories, try new things, explore places, learn whatever interests you and give yourself opportunities to experience life beyond your everyday routine.</p>
+        <p>One more thing, don't be too hard on yourself. You don't have to be productive every single day. You don't have to be strong all the time or have answers to everything. It's completely okay to slow down, take a break, rethink your plans and start again. Be as patient with yourself as you are with the people around you.</p>
+        <p>And yes, I hope you never stop learning. Keep exploring new things, developing your skills, gaining knowledge and becoming a better version of yourself. Never think that you've learned enough or that there is nothing more to discover. There is always something new waiting for you!</p>
+        <p>And now, one very important reminder!</p>
+        <p class="alert">PLEASE TAKE CARE OF YOUR HEALTH, AKKA! ❤️</p>
+        <p>I know you have your studies, responsibilities, plans and so many things to concentrate on. But don't become so busy with everything that you forget about yourself. Eat properly, drink enough water, sleep on time and get sufficient rest. Don't ignore tiredness or keep postponing your health needs. If something doesn't feel right, take it seriously and get proper medical advice whenever needed.</p>
+        <p>Your health should never become the price you pay for achieving your goals. You deserve to enjoy the results of all your hard work with good health and peace of mind. So, please don't skip meals, don't compromise on sleep and don't forget to take care of yourself. This is not just a Diwali reminder; it's an everyday reminder! 😂❤️</p>
+        <p>Finally, Bindu Akka, I wish you endless happiness, good health, success, peace of mind and lots of beautiful memories. May you get opportunities that take you closer to your dreams, strength to overcome difficult situations and enough reasons to feel grateful for the life you're building.</p>
+        <p>May this Diwali mark the beginning of many wonderful things in your life. Keep smiling, keep growing, keep exploring and most importantly, keep being yourself.</p>
+        <p>You deserve all the good things life has to offer. Never forget that!</p>
+        <p>Once again, a very Happy Diwali to you, Bindu Akka! 🪔❤️</p>
+        <p class="sign">With lots of love and best wishes,<br>Niharika ❤️</p>
+      </article>
+      <div class="endrow"><button class="btn" id="toFinal" disabled>Continue ✨</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="s-final" class="screen">
+  <h2>One little wish, just for you...</h2>
+  <p class="lead">May every little light of this Diwali remind you that beautiful things are waiting ahead. Keep smiling, keep growing and take good care of yourself, akka! ❤️</p>
+  <div class="row">
+    <div class="diya"><i class="flame"></i><b></b></div>
+    <div class="diya big"><i class="flame"></i><b></b></div>
+    <div class="diya"><i class="flame"></i><b></b></div>
+  </div>
+  <h1>Happy Diwali, Bindu Akka! 🪔</h1>
+  <button class="btn ghost" id="restart">Experience it again</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
